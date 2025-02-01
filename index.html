@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FísicaXY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav button:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            nav button {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FísicaXY</h1>
+        <p>Explore os conceitos da física de forma simples e intuitiva.</p>
+    </header>
+
+    <nav>
+        <button onclick="location.href='mecanica/'">Mecânica</button>
+        <button onclick="location.href='termodinamica/'">Termodinâmica</button>
+        <button onclick="location.href='eletromagnetismo/'">Eletromagnetismo</button>
+        <button onclick="location.href='optica/'">Óptica</button>
+        <button onclick="location.href='fisica-moderna/'">Física Moderna</button>
+        <button onclick="location.href='problemas-propostos/'">Problemas Propostos</button>
+        <button onclick="location.href='problemas-resolvidos/'">Problemas Resolvidos</button>
+    </nav>
+
+    <div class="container">
+        <h2>Bem-vindo ao FísicaXY!</h2>
+        <p>Selecione uma das áreas acima para começar a explorar.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 FísicaXY. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para criar subpastas automaticamente (simulação)
+        const pastas = [
+            'mecanica', 'termodinamica', 'eletromagnetismo', 
+            'optica', 'fisica-moderna', 'problemas-propostos', 
+            'problemas-resolvidos'
+        ];
+        pastas.forEach(pasta => {
+            console.log(`Subpasta criada: ${pasta}`);
+        });
+    </script>
+</body>
+</html>
